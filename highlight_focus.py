@@ -41,7 +41,7 @@ def scr_position(span, limit, pos):
 def highlight(scr1, scr2):
     # highlight the "active" window, dim the other one
     action1 = "xrandr", "--output", scr1, "--brightness", "1.0"
-    action2 = "xrandr", "--output", scr2, "--brightness", "0.6"
+    action2 = "xrandr", "--output", scr2, "--brightness", "0.8"
     for action in [action1, action2]:
         subprocess.Popen(action)
 

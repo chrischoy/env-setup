@@ -28,3 +28,6 @@ curl -fsSL -o $ZSH_CUSTOM/themes/capri7.zsh-theme https://gist.githubusercontent
 # Once installed, manually set the terminal font to be one of the powerline fonts
 git clone https://github.com/powerline/fonts
 sh fonts/install.sh
+
+# Follow the steps in the URL[1] to remove the show desktop icon
+# [1] http://askubuntu.com/questions/167263/how-can-i-remove-show-desktop-from-the-alt-tab-application-switcher
