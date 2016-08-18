@@ -5,7 +5,7 @@ Setup my personal ubuntu configuration.
 ## Instruction
 
 ```
-git clone --recursive https://github.com/chrischoy/env-setting.git
+git clone --recursive https://github.com/chrischoy/env-setup.git
 cd env-setting
 ./install-requirements.sh
 ./setup-dev-environment.sh
