@@ -31,3 +31,6 @@ sh fonts/install.sh
 
 # Follow the steps in the URL[1] to remove the show desktop icon
 # [1] http://askubuntu.com/questions/167263/how-can-i-remove-show-desktop-from-the-alt-tab-application-switcher
+
+# Diable mouse acceleration
+xset m 0 0 &
