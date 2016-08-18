@@ -1,10 +1,6 @@
 # Generate a ssh key.
 ssh-keygen -t rsa -b 4096 -C "chrischoy@ai.stanford.edu"
 
-# Set up my profile
-git config --global user.email "chrischoy@ai.stanford.edu"
-git config --global user.name "Christopher B. Choy"
-
 # Neovim vim-plug install
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -14,8 +10,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Link vimrc
 ln config/.nvimrc ~/.config/nvim/init.vim
-ln config/.nvimrc ~/.nvimrc
-ln config/.config/.tmux.conf ~/.tmux.conf
+ln config/.nvimrc ~/.nvimrc  # simpler path to find the file quickly
+ln config/.tmux.conf ~/.tmux.conf  
+ln config/.gitconfig ~/.gitconfig
+
+# Set up my profile
+git config --global user.email $1
+git config --global user.name $2
 
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

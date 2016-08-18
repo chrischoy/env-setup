@@ -4,11 +4,13 @@ Setup my personal ubuntu configuration.
 
 ## Instruction
 
+Replace "your@email.com" and "Your name" with appropriate strings
+
 ```
 git clone --recursive https://github.com/chrischoy/env-setting.git
 cd env-setting
 ./install-requirements.sh
-./setup-dev-environment.sh
+./setup-dev-environment.sh "your@email.com" "Your name"
 ```
 
 ## Highlight Current Screen
