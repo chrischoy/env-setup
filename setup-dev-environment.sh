@@ -9,10 +9,10 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Link vimrc
-ln config/.nvimrc ~/.config/nvim/init.vim
-ln config/.nvimrc ~/.nvimrc  # simpler path to find the file quickly
-ln config/.tmux.conf ~/.tmux.conf  
-ln config/.gitconfig ~/.gitconfig
+ln -s "$(pwd -P)"/config/.nvimrc ~/.config/nvim/init.vim
+ln -s "$(pwd -P)"/config/.nvimrc ~/.nvimrc  # simpler path to find the file quickly
+ln -s "$(pwd -P)"/config/.tmux.conf ~/.tmux.conf  
+ln -s "$(pwd -P)"/config/.gitconfig ~/.gitconfig
 
 # Set up my profile
 git config --global user.email $1
