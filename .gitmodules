@@ -1,3 +1,4 @@
-[submodule "config"]
-	path = config
-	url = git@github.com:chrischoy/config
+[submodule "dotfiles"]
+	path = dotfiles
+	url = https://github.com/chrischoy/dotfiles
+	branch = master
