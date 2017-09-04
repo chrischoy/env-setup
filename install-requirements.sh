@@ -33,7 +33,7 @@ sudo apt-get install unit  # CompizConfig manager
 # See https://neovim.io/doc/user/provider.html#provider-python
 sudo pip install neovim
 sudo pip3 install neovim  # for python3 plugins
-sudo pip install pylint autopep8  # python lint checker
+sudo pip install flake8 pylint autopep8  # python lint checker
 
 # Install python packages
 sudo pip install grip  # Markdown renderer
