@@ -25,6 +25,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 mkdir $ZSH_CUSTOM/themes
 curl -fsSL -o $ZSH_CUSTOM/themes/capri7.zsh-theme https://gist.githubusercontent.com/chrischoy/a1a4f3e9468efd61a4ff4e3f67c945c5/raw/capri7.zsh-theme
 
+# Install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 # Powerline fonts
 # Once installed, manually set the terminal font to be one of the powerline fonts
 git clone https://github.com/powerline/fonts
